@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description" content="A private collection of Seiko and G-SHOCK watches available for sale in the UK." />
+  <title>Private Watch Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">WATCHES</a>
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-cta" onclick="document.querySelector('#collection').scrollIntoView({behavior:'smooth'})">View collection</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">PRIVATE COLLECTION · UK</p>
+        <h1>Watches worth<br><span>wearing.</span></h1>
+        <p class="hero-copy">A hand-picked collection of Seiko, Grand Seiko and G-SHOCK timepieces. New, mint and carefully kept pieces, offered directly by the owner.</p>
+        <div class="hero-actions"><a class="button dark" href="#collection">Explore the collection</a><a class="text-link" href="#about">How it works →</a></div>
+      </div>
+      <div class="hero-orbit"></div>
+    </section>
+
+    <section class="ticker"><span>HAND-PICKED</span><i></i><span>UK COLLECTION</span><i></i><span>INDIVIDUAL PRICES</span><i></i><span>DIRECT CONTACT</span></section>
+
+    <section id="collection" class="collection section">
+      <div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Find your next watch.</h2></div><p class="section-note">Browse every piece below. Open a watch for specifications, condition and the current asking price.</p></div>
+      <div id="watchGrid" class="watch-grid"></div>
+    </section>
+
+    <section id="about" class="feature-dark">
+      <div class="feature-copy"><p class="eyebrow">BUY WITH CONFIDENCE</p><h2>See the watch.<br>Know the details.</h2><p>Each listing is designed to give you the information you need before reaching out. Your own photographs can be added to each listing in the <code>images/</code> folder.</p><a class="button light" href="#contact">Get in touch</a></div>
+      <div class="feature-card"><div class="placeholder large"><div class="camera">＋</div><span>Collection image<br><small>Add photos to /images</small></span></div></div>
+    </section>
+
+    <section class="notes section"><div class="note"><strong>Market-aware pricing</strong><span>Prices are suggested private-sale asking prices, benchmarked against current UK retail and market listings.</span></div><div class="note"><strong>Condition is personal</strong><span>Actual condition, box, papers, accessories and warranty should be confirmed with the seller for each piece.</span></div><div class="note"><strong>Direct sale</strong><span>This site is a catalogue, not a checkout. Contact the owner to discuss availability and purchase.</span></div></section>
+
+    <section id="contact" class="contact section"><p class="eyebrow">READY WHEN YOU ARE</p><h2>Found the one?</h2><p>Use your preferred contact method and quote the reference of the watch you are interested in.</p><div class="contact-row"><a id="emailLink" class="button dark" href="mailto:?subject=Watch enquiry">Email the owner</a><a class="button outline" href="#collection">Keep browsing</a></div><p class="contact-hint">Update the email address in <code>data.js</code> before publishing.</p></section>
+  </main>
+
+  <footer><div><strong>WATCHES</strong><span>Private collection · UK</span></div><span>© <span id="year"></span> Private Watch Collection</span></footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
